@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin-left: 20px;
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day3</h1>
+    <h1>Login form using HTML and CSS</h1>
+    <h3>Sign in</h3>
+    <p>Sign in your username and password</p>
+    <form action="">
+        <label for="username">Your username : </label>
+<input type="text" placeholder="Enter Username" name="Your username" id="username">
+       <br><br>
+        <label for="passward">Your password : </label>
+            <input type="password" placeholder="Enter Passward" name="Your passward" id="passward">
+        <br>
+        <button>Login</button>
+       <p> Not a member? <a href="">Register here!</a></p>
+    </form>
+    <br><br><br>
+
+    <!-- Second Form -->
+
+    <div style="background-color: aqua; border: 2px solid black; width: 600px; ">
+    <form action="">
+        <h1 style="border: 2px solid black; padding: 30px; margin: 30px; text-align: center;">Student Registration Form</h1>
+
+        <label for="name">Name :  </label>
+            <input type="text" placeholder="Enter full name" name="Name" id="name">
+       <br><br>
+
+        <label for="Fname">Father's Name : </label>
+            <input type="text" name="Father's Name" id="Fname">
+        <br><br>
+
+        <label for="Mname">Mother's Name : </label>
+            <input type="text" name="Mother's Name" id="Mname">
+        <br><br>
+
+        <label for="phone">Mobile no : </label>
+            <input type="number" placeholder="017xxxxxxx" name="Mobile no" id="phone">
+        <br><br>
+
+        <label for="email">Email : </label>
+            <input type="email" name="Email" id="email" placeholder="sample@example.com">
+        <br><br>
+
+         <label for="male">Gender : </label>
+         <input type="radio" name="Gender" id="male">Male
+         <input type="radio" name="Gender" id="female">Female
+         <input type="radio" name="Gender" id="others">Others
+         <br><br>
+
+         <label for="dob">Date Of Birth : </label>
+         <input type="date" name="Date Of Birth" id="dob">
+         <br><br>
+
+         <label for="address">Address : </label>
+         <input type="text" id="address" placeholder="Street-  House-  Road- " size="50">
+         <br><br>
+
+         <label for="">Blood Group : </label>
+    <select>
+        <option>Select</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+    </select>
+    <br><br>
+
+    <label for="cse">Department : </label>
+    <input type="radio" id="cse" name="department"> CSE
+    <input type="radio" id="eee" name="department"> EEE
+    <input type="radio" id="bba" name="department"> BBA
+    <br><br>
+
+    <label for="">Course : </label>
+    <input type="checkbox"> C
+    <input type="checkbox"> C++
+    <input type="checkbox"> Java
+    <input type="checkbox"> AI
+    <input type="checkbox"> Machine Learning
+    <input type="checkbox"> Robotics
+    <br><br>
+
+    <label for="">Photo : </label>
+    <input type="file">
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+</div>    
+</body>
+</html>
