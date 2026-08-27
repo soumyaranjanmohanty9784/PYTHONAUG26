@@ -1,0 +1,7 @@
+.box{
+    width: 150px;
+    background-color: aquamarine;
+    border: 10px solid red;
+    padding: 20px 30px;
+    margin: 20px 30px 20px 30px;
+}
