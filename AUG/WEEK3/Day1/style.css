@@ -1,0 +1,17 @@
+#para-id{
+    background-color: red;
+}
+.box2{
+    color: blue;
+}
+b{
+    font-size: 30px;
+}
+#para-id,.box1,b{
+    font-family: cursive;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* combinator selecter */
