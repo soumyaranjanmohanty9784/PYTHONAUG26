@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-container{
+    width: 100vw;
+    height: 70px;
+    background-color: red;
+    display: flex;
+}
+.nav{
+    max-width: 1400px;
+    height: 100%;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    
+
+}
+.nav .left{
+    width: 30%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+  
+}
+.nav .left .p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.nav .right{
+    width: 70%;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}

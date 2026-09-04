@@ -1,0 +1,6 @@
+.flex-container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    border-radius: 20px 300px 20px 300px;
+}
