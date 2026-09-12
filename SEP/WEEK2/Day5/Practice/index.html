@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlavOriz - Culinary Website</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="bg-white text-[#252525] font-[Inter]">
+
+  <!-- Header Section -->
+
+<header class="w-full px-5 sm:px-7 lg:px-8 py-4">
+
+    <div class="w-full flex items-center justify-between">
+
+        <!-- Logo Section -->
+        <div class="text-[17px] font-extrabold tracking-[-1px]">FLA<span class="text-[#f6a014]">V</span>ORIZ
+        </div>
+
+        <!-- Nav Section -->
+        <nav class="hidden md:flex items-center gap-7 lg:gap-8 text-[9px] text-gray-600">
+
+            <a href="#" class="relative text-black font-semibold"><span class="absolute -left-3 top-[3px] w-[4px] h-[4px] rounded-full bg-[#f6a014]"></span>HOME</a>
+
+            <a href="#" class="hover:text-[#f6a014]">ABOUT</a>
+
+            <a href="#" class="hover:text-[#f6a014]">RECIPES</a>
+
+            <a href="#" class="hover:text-[#f6a014]">BLOG</a>
+
+            <a href="#" class="hover:text-[#f6a014]">CONTACT</a>
+
+        </nav>
+
+        <!-- Search user img section -->
+        <div class="flex items-center gap-2">
+
+            <div class="hidden sm:flex items-center w-[105px] h-[27px] bg-[#f7f7f7] rounded-full px-3">
+
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    class="w-full bg-transparent outline-none
+                    text-[8px] text-gray-500"
+                >
+
+                <span class="text-[12px] text-gray-400">
+                    ⌕
+                </span>
+
+            </div>
+
+            <div
+                class="w-[27px] h-[27px]
+                rounded-full
+                bg-[#252525]
+                text-white
+                flex items-center justify-center
+                text-[12px]"
+            >
+                ♙
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="w-full px-5 sm:px-7 lg:px-8">
+
+<!-- Hero Section -->
+<section
+    class="relative
+    w-full
+    h-[265px]
+    sm:h-[290px]
+    lg:h-[300px]
+    overflow-hidden
+    rounded-[12px]
+    bg-[#f7f7f7]"
+>
+
+    <!-- Hero Img Section -->
+
+    <img
+        src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=1400&q=90"
+        alt="Food Image"
+        class="
+        absolute
+        right-0
+        top-0
+        h-full
+        w-[62%]
+        sm:w-[57%]
+        lg:w-[53%]
+        object-cover
+        "
+    >
+
+    <!-- IMAGE FADE -->
+
+    <div
+        class="
+        absolute
+        inset-0
+        bg-gradient-to-r
+        from-[#f7f7f7]
+        via-[#f7f7f7]/95
+        via-[45%]
+        to-transparent
+        "
+    ></div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div
+        class="
+        relative
+        z-10
+        h-full
+        flex
+        items-center
+        "
+    >
+
+        <div class="pl-6 sm:pl-9 lg:pl-10">
+
+            <h1
+                class="
+                text-[34px]
+                sm:text-[40px]
+                lg:text-[43px]
+                font-bold
+                leading-[1.02]
+                tracking-[-2px]
+                "
+            >
+                Adventure
+                <br>
+                of
+                <span class="text-[#f6a014]">
+                    Delicacies
+                </span>
+            </h1>
+
+
+            <p
+                class="
+                mt-3
+                text-[9px]
+                sm:text-[10px]
+                lg:text-[11px]
+                text-gray-400
+                leading-[1.5]
+                max-w-[310px]
+                "
+            >
+                Unlock a world of variety culinary recipes and unleash
+                your inner chef the easy way with FlavOriz.
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="flex items-center gap-2 mt-8">
+
+                <button
+                    class="
+                    flex
+                    items-center
+                    gap-2
+                    bg-[#252525]
+                    text-white
+                    rounded-full
+                    px-4
+                    py-[8px]
+                    text-[8px]
+                    "
+                >
+                    Explore Recipes
+
+                    <span
+                        class="
+                        w-[15px]
+                        h-[15px]
+                        rounded-full
+                        bg-white
+                        text-black
+                        flex
+                        items-center
+                        justify-center
+                        "
+                    >
+                        ♡
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="
+                    bg-white
+                    rounded-full
+                    px-4
+                    py-[8px]
+                    text-[8px]
+                    shadow-sm
+                    "
+                >
+                    Get Our Mobile App
+                    <span class="ml-1">
+                        ↓
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section
+    class="
+    w-full
+    mt-3
+    grid
+    grid-cols-1
+    lg:grid-cols-[1fr_215px]
+    gap-3
+    "
+>
+
+    <!-- Left Feature Card -->
+
+    <div
+        class="
+        bg-[#fafafa]
+        rounded-[12px]
+        px-5
+        py-4
+        grid
+        grid-cols-1
+        sm:grid-cols-3
+        gap-5
+        "
+    >
+
+        <!-- User-Centered -->
+
+        <div>
+
+            <div class="text-[12px] mb-2">
+                ♙
+            </div>
+
+            <h3 class="text-[9px] font-semibold">
+                User-Centered
+            </h3>
+
+            <p
+                class="
+                mt-1
+                text-[8px]
+                text-gray-400
+                leading-[1.5]
+                max-w-[220px]
+                "
+            >
+                Your feedback shapes our platform ensuring
+                a seamless and satisfying culinary journey.
+            </p>
+
+        </div>
+
+
+        <!-- Diverse Recipes -->
+
+        <div>
+
+            <div class="text-[12px] mb-2">
+                ◐
+            </div>
+
+            <h3 class="text-[9px] font-semibold">
+                Diverse Recipes
+            </h3>
+
+            <p
+                class="
+                mt-1
+                text-[8px]
+                text-gray-400
+                leading-[1.5]
+                max-w-[220px]
+                "
+            >
+                We celebrate diverse culinary traditions from
+                around the world, inspiring you today.
+            </p>
+
+        </div>
+
+
+        <!-- Fun Community -->
+
+        <div>
+
+            <div class="text-[12px] mb-2">
+                ♡
+            </div>
+
+            <h3 class="text-[9px] font-semibold">
+                Fun Community
+            </h3>
+
+            <p
+                class="
+                mt-1
+                text-[8px]
+                text-gray-400
+                leading-[1.5]
+                max-w-[220px]
+                "
+            >
+                We foster a vibrant foodie community where joy
+                comes with sharing recipes with us.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Featured food card -->
+
+    <div
+        class="
+        bg-white
+        rounded-[12px]
+        shadow-[0_3px_15px_rgba(0,0,0,0.08)]
+        p-2
+        flex
+        gap-3
+        "
+    >
+
+        <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=85"
+            alt="Steak"
+            class="
+            w-[70px]
+            h-[70px]
+            rounded-[9px]
+            object-cover
+            "
+        >
+
+
+        <div
+            class="
+            flex
+            flex-col
+            justify-between
+            py-[2px]
+            flex-1
+            "
+        >
+
+            <span
+                class="
+                text-[#f6a014]
+                text-[7px]
+                font-semibold
+                "
+            >
+                FEATURED
+            </span>
+
+
+            <h3
+                class="
+                text-[10px]
+                font-bold
+                leading-[1.3]
+                "
+            >
+                Calisbury Steak
+                <br>
+                and Asparagus
+            </h3>
+
+
+            <div class="flex items-center justify-between">
+
+                <span class="text-gray-400 text-[10px]">
+                    |-|-|-|-|-|-|-|-|-|
+                </span>
+
+                <button
+                    class="
+                    w-[20px]
+                    h-[20px]
+                    rounded-full
+                    bg-[#f6a014]
+                    text-white
+                    text-[8px]
+                    "
+                >
+                    ▶
+                </button>
+
+            </div>
+
+
+            <a
+                href="#"
+                class="text-[8px] font-semibold underline"
+            >
+                See Recipe
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Second Section -->
+
+<section class="mt-14 sm:mt-16 lg:mt-14">
+
+    <div class="text-center">
+
+        <h2
+            class="
+            text-[27px]
+            sm:text-[30px]
+            lg:text-[31px]
+            font-bold
+            leading-[1.05]
+            tracking-[-1px]
+            "
+        >
+            Become a true
+            <span class="text-[#f6a014]">
+                chef
+            </span>
+            <br>
+            with our recipes.
+        </h2>
+
+
+        <p
+            class="
+            mt-3
+            text-[9px]
+            sm:text-[10px]
+            text-gray-400
+            leading-[1.5]
+            "
+        >
+            We are home to a variety of recipes
+            <br>
+            worldwide for you to learn.
+        </p>
+
+    </div>
+ <!-- Cards -->
+
+    <div
+        class="
+        mt-8
+        w-full
+        flex
+        flex-col
+        lg:flex-row
+        items-center
+        lg:items-end
+        justify-center
+        gap-3
+        lg:gap-0
+        "
+    >
+
+<!-- Left Card -->
+
+        <div
+            class="
+            relative
+            w-[150px]
+            h-[165px]
+            rounded-[12px]
+            overflow-hidden
+            lg:mr-2
+            "
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=85"
+                alt="Cooking"
+                class="w-full h-full object-cover"
+            >
+
+
+            <div
+                class="
+                absolute
+                bottom-2
+                left-2
+                right-2
+                bg-white/90
+                rounded-full
+                px-3
+                py-[6px]
+                text-[7px]
+                "
+            >
+                 Easy to follow recipes
+            </div>
+
+        </div>
+<!-- Second Card -->
+
+        <div
+            class="
+            relative
+            w-[150px]
+            h-[157px]
+            bg-[#f6a014]
+            rounded-[12px]
+            p-4
+            text-white
+            lg:mb-[-20px]
+            "
+        >
+
+            <h3
+                class="
+                mt-5
+                text-[18px]
+                font-semibold
+                leading-[1.08]
+                "
+            >
+                “Cooking has
+                <br>
+                never been
+                <br>
+                this easy!”
+            </h3>
+
+
+            <!-- Photo section -->
+
+            <div
+                class="
+                absolute
+                bottom-4
+                left-4
+                flex
+                items-center
+                gap-2
+                "
+            >
+
+                <img
+                    src="https://i.pravatar.cc/100?img=47"
+                    alt="Chef"
+                    class="
+                    w-[25px]
+                    h-[25px]
+                    rounded-full
+                    object-cover
+                    "
+                >
+
+                <div>
+
+                    <p class="text-[7px] font-semibold">
+                        Prabhati Parida
+                    </p>
+
+                    <p class="text-[6px] opacity-70">
+                        Master Chef 2026
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- 3rd Card -->
+
+        <div
+            class="
+            w-[150px]
+            min-h-[120px]
+            bg-[#fafafa]
+            rounded-[12px]
+            p-3
+            lg:mb-[-12px]
+            "
+        >
+
+            <!-- item 1 -->
+
+            <div
+                class="
+                bg-white
+                rounded-[8px]
+                p-2
+                mb-2
+                flex
+                items-center
+                gap-2
+                "
+            >
+
+                <div
+                    class="
+                    w-[25px]
+                    h-[25px]
+                    rounded-full
+                    bg-orange-50
+                    flex
+                    items-center
+                    justify-center
+                    text-[#f6a014]
+                    text-[10px]
+                    "
+                >
+                    ♙
+                </div>
+
+                <div>
+
+                    <p class="text-[7px] font-semibold">
+                        Achievement
+                    </p>
+
+                    <p class="text-[6px] text-gray-400">
+                        Cook 2 foods today
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- item 2 -->
+
+            <div
+                class="
+                bg-white
+                rounded-[8px]
+                p-2
+                mb-2
+                flex
+                items-center
+                gap-2
+                "
+            >
+
+                <div
+                    class="
+                    w-[25px]
+                    h-[25px]
+                    rounded-full
+                    bg-orange-50
+                    flex
+                    items-center
+                    justify-center
+                    text-[#f6a014]
+                    text-[10px]
+                    "
+                >
+                    ♡
+                </div>
+
+                <div>
+
+                    <p class="text-[7px] font-semibold">
+                        Live Now
+                    </p>
+
+                    <p class="text-[6px] text-gray-400">
+                        Chef Mark Johnson
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 3 -->
+
+            <div
+                class="
+                bg-white
+                rounded-[8px]
+                p-2
+                flex
+                items-center
+                gap-2
+                "
+            >
+
+                <div
+                    class="
+                    w-[25px]
+                    h-[25px]
+                    rounded-full
+                    bg-orange-50
+                    flex
+                    items-center
+                    justify-center
+                    text-[#f6a014]
+                    text-[10px]
+                    "
+                >
+                    ◒
+                </div>
+
+                <div>
+
+                    <p class="text-[7px] font-semibold">
+                        Today's Recipe
+                    </p>
+
+                    <p class="text-[6px] text-gray-400">
+                        Spaghetti Bolognese
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+<!-- Right Card -->
+
+        <div
+            class="
+            relative
+            w-[150px]
+            h-[220px]
+            rounded-[12px]
+            overflow-hidden
+            lg:ml-2
+            "
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=90"
+                alt="Master Chef"
+                class="w-full h-full object-cover">
+        
+
+            <div
+                class="
+                absolute
+                inset-0
+                bg-gradient-to-t
+                from-black/50
+                via-transparent
+                to-transparent
+                "
+            ></div>
+
+
+            <!-- Live -->
+
+            <div
+                class="
+                absolute
+                top-2
+                left-2
+                text-white
+                text-[7px]
+                "
+            >
+                • LIVE
+            </div>
+
+
+            <!-- Viewrs -->
+
+            <div
+                class="
+                absolute
+                top-2
+                right-2
+                bg-white/90
+                rounded-full
+                px-2
+                py-1
+                text-[7px]
+                "
+            >
+                ♡ 100+
+            </div>
+
+
+            <!-- Title -->
+
+            <div
+                class="
+                absolute
+                bottom-3
+                left-3
+                text-white
+                "
+            >
+
+                <h3
+                    class="
+                    text-[18px]
+                    font-bold
+                    leading-[1]
+                    "
+                >
+                    Cook with
+                    <br>
+                    Master Chefs
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<div class="h-10"></div>
+
+</body>
+</html>
