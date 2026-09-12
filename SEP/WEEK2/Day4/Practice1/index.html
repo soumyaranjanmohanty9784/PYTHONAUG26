@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: "#d81767",
+            dark: "#252525",
+            soft: "#fff4f7"
+          },
+          boxShadow: {
+            card: "0 8px 28px rgba(0,0,0,.07)"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color:#292929; }
+    .container-x { width:min(100% - 40px, 1060px); margin:auto; }
+    .section-label { color:#c43b78; font-size:11px; position:relative; padding-left:28px; }
+    .section-label:before { content:""; position:absolute; left:0; top:50%; width:22px; height:1px; background:#c43b78; }
+    .section-label:after { content:""; position:absolute; left:21px; top:calc(50% - 3px); border-width:3px 0 3px 5px; border-style:solid; border-color:transparent transparent transparent #c43b78; }
+    .dot-pattern {
+      background-image: radial-gradient(#555 1px, transparent 1px);
+      background-size: 7px 7px;
+    }
+    .circle-lines {
+      border:1px solid #d81767;
+      border-radius:9999px;
+      box-shadow: 0 0 0 5px rgba(216,23,103,.0), 0 0 0 8px rgba(216,23,103,.55);
+    }
+    .service-card { transition:.25s; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 14px 35px rgba(0,0,0,.1); }
+    .team-img { height:145px; object-fit:cover; }
+    .portfolio-img { height:190px; object-fit:cover; }
+  </style>
+</head>
+
+<body class="bg-white">
+
+<!-- Header au Hero Section -->
+<header class="bg-[#fafafa] border-b border-gray-100">
+  <div class="container-x h-[64px] flex items-center justify-between">
+    <a href="#home" class="text-pink font-bold text-[18px]">Software Company</a>
+
+    <nav class="hidden md:flex items-center gap-7 text-[11px] text-gray-600">
+      <a href="#home" class="text-pink font-semibold">Home</a>
+      <a href="#about" class="hover:text-pink">About</a>
+      <a href="#services" class="hover:text-pink">Services</a>
+      <a href="#portfolio" class="hover:text-pink">Pages⌄</a>
+      <a href="#contact" class="hover:text-pink">Contact</a>
+      <a href="#pricing" class="bg-pink text-white px-5 py-3 rounded text-[10px]">Get Started</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+    <div class="container-x py-4 flex flex-col gap-4 text-sm">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <section class="container-x relative pt-14 pb-20">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="section-label mb-4">Welcome To Ajux</div>
+        <h1 class="text-4xl md:text-[47px] leading-[1.05] font-extrabold max-w-[560px]">
+          Impact the World<br/>by Taking Action
+        </h1>
+        <p class="text-gray-500 text-[12px] leading-5 max-w-[510px] mt-5">
+          Objectively foster extensible scenarios and business innovation.
+          Energistically predominate prospective experiences with strategic initiatives.
+        </p>
+        <a href="#pricing" class="inline-block mt-6 bg-pink text-white text-[11px] px-6 py-3 rounded">
+          Get Started
+        </a>
+      </div>
+
+      <div class="relative flex justify-center">
+        <div class="absolute -right-2 top-[-10px] w-10 h-10 circle-lines"></div>
+        <div class="grid grid-cols-[78px_155px] gap-2">
+          <div class="space-y-2 pt-0">
+            <img class="w-[78px] h-[95px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=500&q=80">
+            <img class="w-[78px] h-[95px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=500&q=80">
+          </div>
+          <img class="w-[155px] h-[198px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80">
+        </div>
+        <div class="absolute -left-4 bottom-[-20px] w-8 h-16 dot-pattern"></div>
+        <div class="absolute -right-10 bottom-0 text-xl text-gray-500">⌁⌁</div>
+      </div>
+    </div>
+  </section>
+
+<!-- Services -->
+  <section id="services" class="container-x pb-24">
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">▣</div>
+        <h3 class="font-bold mt-5 text-[15px]">Business Strategy</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">◎</div>
+        <h3 class="font-bold mt-5 text-[15px]">UX/UI Design</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">▧</div>
+        <h3 class="font-bold mt-5 text-[15px]">App Development</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">▣</div>
+        <h3 class="font-bold mt-5 text-[15px]">Business Strategy</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">◎</div>
+        <h3 class="font-bold mt-5 text-[15px]">UX/UI Design</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+      <div class="service-card bg-white shadow-card p-9 text-center rounded">
+        <div class="mx-auto w-12 h-12 rounded-full bg-pink/10 flex items-center justify-center text-pink text-xl">▧</div>
+        <h3 class="font-bold mt-5 text-[15px]">App Development</h3>
+        <p class="text-[11px] text-gray-500 leading-5 mt-4">A business strategy is a powerful tool for helping you reach your goals, defining the methods and tactics.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- About au Team -->
+  <section id="about" class="container-x pb-24">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="section-label mb-4">About Us</div>
+        <h2 class="text-3xl md:text-[35px] leading-tight font-extrabold">Insights About Our<br/>Company</h2>
+        <p class="text-[11px] leading-5 text-gray-500 mt-6 max-w-[530px]">
+          Let our experts prepare a free home analysis for you! Just fill out our form.
+          Surround yourself with the luxury and quality of one of Saskatoon's premier home builder.
+          Just fill out our form.
+        </p>
+        <a href="#" class="text-pink text-[11px] inline-block mt-4">→ Learn More</a>
+
+        <div class="grid grid-cols-4 gap-5 mt-7">
+          <div><b class="text-pink text-2xl">27</b><p class="text-[10px] text-gray-500">Projects</p></div>
+          <div><b class="text-pink text-2xl">18</b><p class="text-[10px] text-gray-500">Campaigns</p></div>
+          <div><b class="text-pink text-2xl">56</b><p class="text-[10px] text-gray-500">Events</p></div>
+          <div><b class="text-pink text-2xl">13</b><p class="text-[10px] text-gray-500">Excellency</p></div>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <img class="w-[360px] h-[360px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80">
+        <div class="absolute -left-3 bottom-0 w-10 h-10 circle-lines"></div>
+      </div>
+    </div>
+
+    <div class="text-center mt-20">
+      <div class="section-label inline-block">Our Team</div>
+      <h2 class="text-2xl font-extrabold mt-1">Our Team</h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Mahbubur Rahman</b><p class="text-[10px] text-gray-500">Front End Developer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Tanvir Ahmed</b><p class="text-[10px] text-gray-500">Product Designer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Sakib Sharier</b><p class="text-[10px] text-gray-500">Webflow Developer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Rifat Shikder</b><p class="text-[10px] text-gray-500">WP Developer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Mahbubur Rahman</b><p class="text-[10px] text-gray-500">Front End Developer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Tanvir Ahmed</b><p class="text-[10px] text-gray-500">Product Designer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Sakib Sharier</b><p class="text-[10px] text-gray-500">Webflow Developer</p></div>
+      </div>
+      <div class="shadow-card rounded overflow-hidden">
+        <img class="w-full team-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80">
+        <div class="p-3"><b class="text-[11px]">Rifat Shikder</b><p class="text-[10px] text-gray-500">WP Developer</p></div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio -->
+  <section id="portfolio" class="container-x pb-24">
+    <div class="section-label mb-4">Portfolio</div>
+    <h2 class="text-3xl font-extrabold">The Best Folio.</h2>
+    <p class="text-[11px] leading-5 text-gray-500 mt-5 max-w-[500px]">
+      Let our experts prepare a free home analysis for you! Just fill out our form.
+      Surround yourself with the luxury and quality of one of Saskatoon's premier home builder.
+    </p>
+    <a href="#" class="text-pink text-[11px] inline-block mt-4">→ Learn More</a>
+
+    <div class="grid md:grid-cols-2 gap-3 mt-7">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1000&q=80">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80">
+      <img class="portfolio-img w-full rounded-lg" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80">
+    </div>
+  </section>
+
+<!-- Testimonial -->
+  <section class="bg-soft py-16">
+    <div class="container-x">
+      <div class="section-label mb-4">Testimonials</div>
+      <h2 class="text-3xl font-extrabold">Customers Talk About Us</h2>
+      <p class="text-[11px] text-gray-500 leading-5 max-w-[560px] mt-5">
+        Customer support represents the resources within your company that provide technical assistance
+        to customers after they purchase a product or service.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-4 mt-8">
+        <div class="bg-white rounded p-5 shadow-sm">
+          <p class="text-[11px] text-gray-500 leading-5">Let our experts prepare a free home analysis for you! Just fill out our form. Surround yourself with quality of one of Saskatoon's premier home builder.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <img class="w-9 h-9 rounded-full object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80">
+            <div><b class="text-[10px]">Mahbubur Rahman</b><p class="text-[9px] text-gray-400">Owner, Sofia, UK</p></div>
+          </div>
+        </div>
+        <div class="bg-white rounded p-5 shadow-sm">
+          <p class="text-[11px] text-gray-500 leading-5">Let our experts prepare a free home analysis for you! Just fill out our form. Surround yourself with quality of one of Saskatoon's premier home builder.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <img class="w-9 h-9 rounded-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80">
+            <div><b class="text-[10px]">Mahbubur Rahman</b><p class="text-[9px] text-gray-400">Owner, Sofia, UK</p></div>
+          </div>
+        </div>
+        <div class="bg-white rounded p-5 shadow-sm">
+          <p class="text-[11px] text-gray-500 leading-5">Let our experts prepare a free home analysis for you! Just fill out our form. Surround yourself with quality of one of Saskatoon's premier home builder.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <img class="w-9 h-9 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80">
+            <div><b class="text-[10px]">Mahbubur Rahman</b><p class="text-[9px] text-gray-400">Owner, Sofia, UK</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Pricing -->
+  <section id="pricing" class="container-x py-20">
+    <div class="section-label mb-4">Pricing</div>
+    <h2 class="text-3xl font-extrabold">The Best Pricing Plan</h2>
+
+    <div class="flex justify-center items-center gap-3 text-[10px] text-gray-500 mt-8">
+      Monthly <span class="w-8 h-4 rounded-full border border-gray-400 p-[2px]"><span class="block w-2 h-2 rounded-full bg-pink"></span></span> Yearly
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-3 max-w-[850px] mx-auto mt-5 items-center">
+      <div class="border border-gray-100 shadow-card p-8 rounded">
+        <h3 class="text-xl">Basic</h3><p class="text-[10px] text-gray-500">Most Popular</p>
+        <div class="text-3xl font-bold mt-9">$2.46<span class="text-sm">/mo</span></div>
+        <p class="text-[10px] mt-1">Yearly <span class="bg-gray-200 px-1">15% Off</span></p>
+        <ul class="text-[10px] text-gray-600 leading-8 mt-7"><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li></ul>
+        <button class="bg-dark text-white text-[10px] px-5 py-2 rounded mt-5">Buy Now</button>
+      </div>
+
+      <div class="bg-pink text-white shadow-card p-8 rounded scale-[1.03]">
+        <h3 class="text-xl">Standard</h3><p class="text-[10px] text-white/80">Recommended</p>
+        <div class="text-3xl font-bold mt-9">$5.75<span class="text-sm">/mo</span></div>
+        <p class="text-[10px] mt-1">Yearly <span class="bg-white/20 px-1">15% Off</span></p>
+        <ul class="text-[10px] leading-8 mt-7"><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li></ul>
+        <button class="bg-dark text-white text-[10px] px-5 py-2 rounded mt-5">Buy Now</button>
+      </div>
+
+      <div class="border border-gray-100 shadow-card p-8 rounded">
+        <h3 class="text-xl">Premium</h3><p class="text-[10px] text-gray-500">Best Value</p>
+        <div class="text-3xl font-bold mt-9">$10.25<span class="text-sm">/mo</span></div>
+        <p class="text-[10px] mt-1">Yearly <span class="bg-gray-200 px-1">15% Off</span></p>
+        <ul class="text-[10px] text-gray-600 leading-8 mt-7"><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li><li>✓ Unlimited Products</li></ul>
+        <button class="bg-dark text-white text-[10px] px-5 py-2 rounded mt-5">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Case Studies -->
+  <section class="container-x pb-20">
+    <div class="grid md:grid-cols-3 gap-3">
+      <div class="md:row-span-2 relative overflow-hidden rounded-lg">
+        <img class="w-full h-[430px] object-cover" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80">
+        <div class="absolute inset-0 bg-black/30 flex items-end justify-center p-7 text-center text-white text-[11px]">Make The World A Better Place<br/><b>UX Case Study</b></div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img class="w-full h-[205px] object-cover" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=700&q=80">
+        <div class="absolute inset-0 bg-black/25 flex items-end justify-center p-5 text-center text-white text-[11px]">Make The World A Better Place<br/><b>UX Case Study</b></div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img class="w-full h-[205px] object-cover" src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80">
+        <div class="absolute inset-0 bg-black/25 flex items-end justify-center p-5 text-center text-white text-[11px]">Make The World A Better Place<br/><b>UX Case Study</b></div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img class="w-full h-[205px] object-cover" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80">
+        <div class="absolute inset-0 bg-black/25 flex items-end justify-center p-5 text-center text-white text-[11px]">Make The World A Better Place<br/><b>UX Case Study</b></div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg">
+        <img class="w-full h-[205px] object-cover" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80">
+        <div class="absolute inset-0 bg-black/25 flex items-end justify-center p-5 text-center text-white text-[11px]">Make The World A Better Place<br/><b>UX Case Study</b></div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <section class="bg-pink text-white py-14">
+    <div class="container-x text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">Subscribe To The Newsletter.</h2>
+      <p class="text-[11px] text-white/80 mt-4">Subscribe is an option offered by product vendors or service<br/>providers that allows customers.</p>
+      <form class="max-w-[500px] mx-auto flex mt-7 bg-white rounded p-1">
+        <input type="email" required placeholder="Example@gmail.com" class="flex-1 px-3 text-gray-700 text-xs outline-none">
+        <button class="bg-pink border-2 border-white text-white px-5 py-2 rounded text-xs">Subscription</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-[#191919] text-white py-14">
+    <div class="container-x">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-pink font-bold text-xl">Software Company</h3>
+          <p class="text-gray-300 text-[12px] leading-5 mt-5 max-w-[220px]">Creative Design & Development Agency in Canada.</p>
+          <div class="flex gap-2 mt-6">
+            <span class="w-6 h-6 bg-white text-black rounded flex items-center justify-center text-xs">in</span>
+            <span class="w-6 h-6 bg-white text-black rounded flex items-center justify-center text-xs">◎</span>
+            <span class="w-6 h-6 bg-white text-black rounded flex items-center justify-center text-xs">f</span>
+          </div>
+        </div>
+        <div><h4 class="font-bold text-sm">Support</h4><div class="text-gray-400 text-[11px] leading-7 mt-4"><p>About</p><p>UX/UI Design</p><p>Graphic Design</p><p>Business Strategy</p><p>App Development</p></div></div>
+        <div><h4 class="font-bold text-sm">Services</h4><div class="text-gray-400 text-[11px] leading-7 mt-4"><p>Blog</p><p>Service</p><p>Portfolio</p><p>Pricing Plan</p><p>Contact Us</p></div></div>
+        <div><h4 class="font-bold text-sm">Contact</h4><div class="text-gray-400 text-[11px] leading-7 mt-4"><p>⌖ 437 Melbourne Ave #4, NY 13253, Australia</p><p>▯ 1-976-1178-9535</p><p>✉ hello.Ajux@gmail.com</p></div></div>
+      </div>
+      <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-[10px]">Copyright 2023, All Rights Reserved</div>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>
