@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>For Result Go to the Console tab</h1>
+    
+    <script>
+        // Q.1 :- Store a student's marks in 5 subjects. Calculate the total marks and percentage.
+
+let subject1 = 80;
+let subject2 = 75;
+let subject3 = 90;
+let subject4 = 85;
+let subject5 = 70;
+
+let total = subject1 + subject2 + subject3 + subject4 + subject5;
+
+let percentage = total / 5;
+
+console.log("Total Marks =", total);
+console.log("Percentage =", percentage + "%");
+
+
+
+
+//Q.2 :- A product costs ₹1200 and has a 15% discount. Calculate the discount amount and final price.
+
+let price = 1200;
+let discount = 15;
+
+let discountAmount = (price * discount) / 100;
+
+let finalPrice = price - discountAmount;
+
+console.log("Discount Amount = ₹" + discountAmount);
+console.log("Final Price = ₹" + finalPrice);
+
+
+
+// Q.3 :- Take a number and determine its square and cube using operators.
+
+let numb = 5;
+
+let square = numb * numb;
+
+let cube = numb * numb * numb;
+
+console.log("Number =", numb);
+console.log("Square =", square);
+console.log("Cube =", cube);
+
+
+
+
+// Q.4 :- Take a number and check whether it is positive, negative, or zero.
+
+let num = -10;
+
+if (num > 0) {
+    console.log("Positive");
+} else if (num < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+
+
+
+//  Q.5 :- 5. ake a student's marks and display:
+// - `90–100` → A
+// - `80–89` → B
+// - `70–79` → C
+// - `60–69` → D
+// - Below `60` → Fail
+
+let marks = 85;
+
+if (marks >= 90 && marks <= 100) {
+    console.log("Grade A");
+} else if (marks >= 80 && marks <= 89) {
+    console.log("Grade B");
+} else if (marks >= 70 && marks <= 79) {
+    console.log("Grade C");
+} else if (marks >= 60 && marks <= 69) {
+    console.log("Grade D");
+} else if (marks < 60) {
+    console.log("Fail");
+} else {
+    console.log("Invalid marks");
+}
+
+
+
+//Q.6 :- Take a number and check whether it is even or odd.
+
+let number = 10;
+
+if (number % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+
+
+
+// Q.7 :- Take three numbers and find the largest number using conditional statements.
+
+let num1 = 25;
+let num2 = 40;
+let num3 = 30;
+
+if (num1 >= num2 && num1 >= num3) {
+    console.log("Largest number =", num1);
+} else if (num2 >= num1 && num2 >= num3) {
+    console.log("Largest number =", num2);
+} else {
+    console.log("Largest number =", num3);
+}
+
+
+
+// Q.8 :- 3. Print the following pattern:
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+
+    for (let j = 1; j <= i; j++) {
+        pattern += j;
+    }
+
+    console.log(pattern);
+}
+
+
+
+// Q.9 :-  Count how many numbers between 1 and 100 are divisible by both 3 and 5.
+
+let count = 0;
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        count++;
+    }
+}
+
+console.log("Count =", count);
+
+
+
+//Q.10 :- Take a number and calculate its factorial.
+
+let num_1 = 5;
+let factorial = 1;
+
+for (let i = 1; i <= num_1; i++) {
+    factorial = factorial * i;
+}
+
+console.log("Factorial =", factorial);
+
+
+
+// Q.11 :- Create a function that takes a number and prints its multiplication table.
+
+function multiplicationTable(num) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(num + " × " + i + " = " + (num * i));
+    }
+}
+
+multiplicationTable(5);
+
+
+
+// Q.12 :- Create a function that takes two numbers and returns their sum.
+
+function sum(a, b) {
+    return a + b;
+}
+
+let result = sum(10, 20);
+
+console.log("Sum =", result);
+
+
+//Q.13 :- Sir Ans asuni
+
+    </script>
+</body>
+</html>
