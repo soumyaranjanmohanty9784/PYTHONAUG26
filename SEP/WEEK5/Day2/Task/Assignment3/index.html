@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fetch API</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="min-h-screen bg-gray-100 p-6">
+
+    <div class="max-w-7xl mx-auto">
+
+
+        <div class="text-center mb-10">
+
+            <div class="text-5xl mb-3">
+                Cards
+            </div>
+
+            <h1 class="text-4xl font-bold text-gray-800">
+                Posts
+            </h1>
+
+            <p class="text-gray-500 mt-2">
+                Data fetched using JavaScript Fetch API
+            </p>
+
+        </div>
+
+
+        <div id="loading"
+            class="text-center text-lg font-semibold text-blue-600">
+
+            Loading posts...
+
+        </div>
+
+
+        <div
+            id="postsContainer"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+        </div>
+
+    </div>
+
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
