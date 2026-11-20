@@ -1,0 +1,9 @@
+Mobile
+Laptop
+CameraKeyboard
+Headphone
+Monitor
+Mouse
+Speaker
+Printer
+Tablet

@@ -1,0 +1,4 @@
+Python is a programming language.
+Python is easy to learn.
+Python supports OOP.
+Python supports file handling.
